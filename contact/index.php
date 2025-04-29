@@ -1,32 +1,15 @@
+<?php 
+$title = 'Contactez-moi'
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-  <!-- Meta charset -->
-  <meta charset="UTF-8">
-  <!-- Meta viewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS -->
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/menu-mobile.css">
-  <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/formulaire.css">
-  <link rel="stylesheet" href="../css/queries.css">
-  <!-- Titre de la page -->
-  <title>Portfolio Immersion</title>
-  <!-- Script JS -->
-  <!-- Script JS pour l'explication du cours Base JS -->
-  <script src="../JS/explication-cours.js"></script>
-  <!-- Script JS pour le menu mobile -->
-  <script src="../JS/menu-mobile.js"></script>
-  <script src="../JS/formulaire.js"></script>
-</head>
+<?php include ("../components/head.php");?>
 
 <body>
   <!-- En-tête -->
-  <?php include "../components/header.php"; ?>
+  <?php include ("../components/header.php"); ?>
 
   <!-- Corps de la page -->
 
@@ -94,7 +77,7 @@
   </main>
 
   <!-- Pied de page -->
-  <?php include "../components/footer.php";?>
+  <?php include ("../components/footer.php");?>
 </body>
 
 </html>
