@@ -1,5 +1,4 @@
 // Déclaration d'une variable
-
 // On peut modifier la valeur de la variable
 let pseudo = "Da";
 // on peut ajouter une valeur à la variable

@@ -1,6 +1,4 @@
-<?php
-$title = 'Accueil';
-?>
+<?php require_once('./config.php'); ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -10,7 +8,6 @@ $title = 'Accueil';
 <body>
   <!-- En-tête -->
   <?php include "./components/header.php"; ?>
-
 
   <!-- Corps de la page -->
   <main>
@@ -38,9 +35,8 @@ $title = 'Accueil';
     <section class="reseau-sociaux">
       <div class="container">
         <div class="text-container">
-          <h2>
-            Du code, des tests, des débuts
-          </h2>
+          <h2>Du code, des tests, des débuts</h2>
+
           <p>
             Avant même ma formation, je mets les mains dans le code ! Mon GitHub, c'est l'endroit où tout commence : projets d'immersion, expérimentations, premières lignes de dev.
           </p>
@@ -53,9 +49,6 @@ $title = 'Accueil';
             <!-- Image pour le GitHub -->
             <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub">
           </a>
-
-
-
         </div>
       </div>
     </section>

@@ -1,35 +1,40 @@
-<?php 
-$title = 'Contactez-moi'
-?>
+<?php require_once('../config.php'); ?>
 
 <!DOCTYPE html>
 <html lang="fr">
 
-<?php include ("../components/head.php");?>
+<?php include("../components/head.php"); ?>
 
 <body>
   <!-- En-tête -->
-  <?php include ("../components/header.php"); ?>
+  <?php include("../components/header.php"); ?>
 
   <!-- Corps de la page -->
-
   <main class="main-contact">
-
     <section class="form-contact">
       <div class="container">
-
         <div class="text-container">
-          <h2>
-            Besoin d&apos;un dev en devenir ?
-          </h2>
+          <h2>Besoin d&apos;un dev en devenir ?</h2>
+
           <p>
             Je suis encore en immersion, mais j&apos;ai déjà les mains dans le code. Si tu veux discuter projet, tech ou
             juste échanger sur mon apprentissage, c&apos;est ici que ça se passe.
-
           </p>
+
+          <?php if (!empty($errors)) : ?>
+            <ul>
+              <?php foreach ($errors as $error) : ?>
+                <li class="erreur">
+                  <?= htmlspecialchars($error); ?>
+                </li>
+              <?php endforeach; ?>
+            </ul>
+          <?php elseif ($success === true) : ?>
+            <p class="confirmation">Votre message a bien été transmis</p>
+          <?php endif; ?>
         </div>
 
-        <form class="formulaire" action="/ma-page-de-traitement" method="post">
+        <form class="formulaire" action="" method="post">
           <ul>
             <li>
               <label for="name">Nom&nbsp;</label>
@@ -48,16 +53,13 @@ $title = 'Contactez-moi'
             <button type="submit">Envoyer le message</button>
           </div>
         </form>
-
       </div>
     </section>
 
     <section class="reseau-sociaux">
       <div class="container">
         <div class="text-container">
-          <h2>
-            Du code, des tests, des débuts
-          </h2>
+          <h2>Du code, des tests, des débuts</h2>
           <p>
             Avant même ma formation, je mets les mains dans le code ! Mon GitHub, c'est l'endroit où tout commence :
             projets d'immersion, expérimentations, premières lignes de dev.
@@ -73,11 +75,11 @@ $title = 'Contactez-moi'
           </a>
         </div>
       </div>
-    </section> 
+    </section>
   </main>
 
   <!-- Pied de page -->
-  <?php include ("../components/footer.php");?>
+  <?php include("../components/footer.php"); ?>
 </body>
 
 </html>

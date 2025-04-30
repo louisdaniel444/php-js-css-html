@@ -2,7 +2,7 @@
 /* 768px = tablette */
 @media screen and (min-width: 768px) {
   .main-contact .reseau-sociaux {
-    display:flex;
+    display: flex;
   }
 
   /* Styles du conteneur du menu mobile */
@@ -15,11 +15,6 @@
     display: flex;
   }
 
-  /* 
-  section:not(.presentation)  .container{
-  max-width: 600px;
-  }
- */
   /* Styles du conteneur */
   .container {
     flex-direction: row;
