@@ -1,7 +1,13 @@
 <?php
 // déclarations variables au serveur
 $host =  'http://' . $_SERVER['HTTP_HOST'] . '/PHP-HTML-CSS-JS/';
-$path = $_SERVER['DOCUMENT_ROOT'] . '/PHP-HTML-CSS-JS/';
+
+if ($_SERVER['HTTP_HOST'] === 'localhost'):
+  $path = $_SERVER['DOCUMENT_ROOT'] . '/PHP-HTML-CSS-JS/';
+else :
+  $path = $_SERVER['DOCUMENT_ROOT'] . '/';
+endif;
+
 $currentUri = $_SERVER['REQUEST_URI'];
 
 // déclarartion et logique du title
