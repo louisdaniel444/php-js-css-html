@@ -5,7 +5,7 @@ $forlderhost = $_SERVER['HTTP_HOST'] . '/PHP-HTML-CSS-JS/';
 if (file_exists($forlderhost)) :
   $host =  'http://' . $_SERVER['HTTP_HOST'] . '/PHP-HTML-CSS-JS/';
 else :
-  $host =  'http://' . $_SERVER['HTTP_HOST'] . '/';
+  $host =  'https://' . $_SERVER['HTTP_HOST'] . '/';
 endif;
 
 $forlderpath = $_SERVER['DOCUMENT_ROOT'] . '/PHP-HTML-CSS-JS/';
