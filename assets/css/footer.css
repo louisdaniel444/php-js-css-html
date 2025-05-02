@@ -5,3 +5,15 @@ footer {
   padding: 2rem 1rem;
   text-align: center;
 }
+
+footer div.d-flex {
+  max-width: 1200px;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}

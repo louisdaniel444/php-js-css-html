@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="<?= $host . 'assets/css/menu-mobile.css'; ?>">
   <link rel="stylesheet" href="<?= $host . 'assets/css/footer.css'; ?>">
   <link rel="stylesheet" href="<?= $host . 'assets/css/main.css'; ?>">
-  <link rel="stylesheet" href="<?= $host . 'assets/css/queries.css'; ?>">
   <link rel="stylesheet" href="<?= $host . 'assets/css/formulaire.css'; ?>">
   <link rel="stylesheet" href="<?= $host . 'assets/css/about.css'; ?>">
+  <link rel="stylesheet" href="<?= $host . 'assets/css/queries.css'; ?>">
   <!-- Titre de la page -->
   <title> <?= $title; ?></title>
   <!-- Script JS pour l'explication du cours Base JS -->

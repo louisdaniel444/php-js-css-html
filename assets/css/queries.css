@@ -1,10 +1,17 @@
 /* Media Queries pour le responsive */
 /* 768px = tablette */
 @media screen and (min-width: 768px) {
+
+  .flex-wrap {
+    flex-wrap: nowrap;
+  }
   .main-contact .reseau-sociaux {
     display: flex;
   }
 
+  footer div.d-flex {
+    flex-direction: row;
+  }
   /* Styles du conteneur du menu mobile */
   .container-menu-mobile {
     display: none;
