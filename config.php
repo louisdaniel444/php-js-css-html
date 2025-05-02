@@ -2,7 +2,9 @@
 // déclarations variables au serveur
 $host =  'http://' . $_SERVER['HTTP_HOST'] . '/PHP-HTML-CSS-JS/';
 
-if ($_SERVER['HTTP_HOST'] === 'localhost'):
+$forldername = $_SERVER['DOCUMENT_ROOT'] . '/PHP-HTML-CSS-JS/';
+
+if (file_exists($forldername)) :
   $path = $_SERVER['DOCUMENT_ROOT'] . '/PHP-HTML-CSS-JS/';
 else :
   $path = $_SERVER['DOCUMENT_ROOT'] . '/';
