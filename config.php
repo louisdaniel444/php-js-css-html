@@ -10,7 +10,7 @@ endif;
 
 $forlderpath = $_SERVER['DOCUMENT_ROOT'] . '/PHP-HTML-CSS-JS/';
 
-if (file_exists($forldername)) :
+if (file_exists($forlderpath)) :
   $path = $_SERVER['DOCUMENT_ROOT'] . '/PHP-HTML-CSS-JS/';
 else :
   $path = $_SERVER['DOCUMENT_ROOT'] . '/';
